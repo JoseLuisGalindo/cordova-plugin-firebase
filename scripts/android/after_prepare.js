@@ -32,6 +32,7 @@ var PLATFORM = {
 };
 
 module.exports = function (context) {
+  console.log('Running after_prepare for FIREBASE cordova plugin for ANDROID');
   if (utilities.directoryExists(ANDROID_DIR)) {
     console.log('Preparing Firebase on Android');
     utilities.copyKey(PLATFORM.ANDROID);

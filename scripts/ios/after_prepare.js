@@ -31,6 +31,7 @@ var PLATFORM = {
 };
 
 module.exports = function (context) {
+  console.log('Running after_prepare for FIREBASE cordova plugin for IOS');
   // Copy key files to their platform specific folders
   if (utilities.directoryExists(IOS_DIR)) {
     console.log('Preparing Firebase on iOS');
